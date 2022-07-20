@@ -1,0 +1,236 @@
+/* Google font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/* Common Css */
+* {
+    margin: 15px;
+    padding: 0;
+    outline: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading css start  */
+.header {
+    background-color:black;
+    border-radius: 50px;
+
+}
+.header-part {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-text {
+    padding: 0 110px;
+}
+
+.banner-text h1 {
+    line-height: 80px;
+    font-size: 42px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.banner-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 30px;
+
+}
+
+.banner-text a {
+    padding: 15px 35px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.banner-text a:hover {
+    background-color: #45a049;
+    transition: all linear .3s;
+}
+
+.banner-image img {
+    width: 356px;
+    height: 438px;
+    padding-right: 20px;
+    transition: all linear .3s;
+}
+
+.banner-image img:hover {
+    transform: scale(1.2);
+}
+/* match form */
+.match-form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: 2px solid black;
+    background-color: #000000;
+    border-radius: 10px;
+    
+}
+.match-form input{
+    margin-top:1em ;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.match-form input[type="Blog"]{
+    background-color: #DD0000;
+   font-weight: 700;
+   
+}
+.match-form a{
+    background-color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* blog start-- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px; 
+  
+}
+
+.blog .blog-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.blog-duration{
+    display: flex;
+   
+}
+
+/* blog end-- */
+/* Contact start */
+.contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    background-color: #E02C6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+    transition: all linear .3s;
+}
+
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* Contact end */
+#footer{
+    
+    padding: 90px 0;
+    background-color:black;
+}
+#footer h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 30px 0;
+    color: #ffffff;
+
+}
+
+nav a{
+    text-decoration: none;
+    color:lightgrey;
+  margin-right: 50px;   
+}
+/* Media Quaries */
+/* mobile devices */
+@media only screen and ( max-width : 668px) {
+    .header-part {
+        grid-template-columns: 1fr;
+        padding: 50px 0;
+    }
+    .banner-text {
+        padding: 0px 60px;
+    }
+    .banner-text h1 {
+        line-height: 66px;
+        font-size: 36px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+    }
+    .blogs{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .blog .form{
+        flex-direction: column;
+       
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width:669px) and (max-width:991px) {
+    .blogs{
+        width: 100%;
+    }
+    .blogs,.form{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner-text {
+        padding: 0px 60px;
+    }
+    .banner-text h1 {
+        line-height: 6
+        .banner-image img {
+            width: 400px;
+            height: 300px;
+    
+        }
+    }
+    .banner-image img {
+        width: 400px;
+        height: 300px;
+
+    }
+}
